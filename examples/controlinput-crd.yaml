@@ -27,7 +27,7 @@ spec:
               properties:
                 controls:
                   type: object
-                  description: "Map of control IDs to their configuration values. Keys are control IDs (e.g., 'c-0001'), values are arrays of configuration strings."
+                  description: "Map of control-input names to their values. Keys are input names, not control IDs (e.g., 'cpu_limit_min', 'max_critical_vulnerabilities'), values are arrays of configuration strings."
                   additionalProperties:
                     type: array
                     items:
