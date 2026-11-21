@@ -1962,6 +1962,34 @@ kubescape predict pss ./k8s/ -f sarif -o pss.sarif
 
 ---
 
+## kubescape prerequisites
+
+Check prerequisites for installing the Kubescape Operator in a cluster.
+
+### Synopsis
+
+```bash
+kubescape prerequisites [--kubeconfig <path>]
+```
+
+### Flags
+
+| Flag | Short | Default | Description |
+|---|---|---|---|
+| `--kubeconfig` | - | - | Path to the kubeconfig file. If not set, in-cluster config is used or `$HOME/.kube/config` if outside a cluster. |
+
+### Examples
+
+```bash
+# Check prerequisites for installing Kubescape Operator in the current cluster
+kubescape prerequisites
+
+# Check prerequisites using a specific kubeconfig file
+kubescape prerequisites --kubeconfig /path/to/kubeconfig
+```
+
+---
+
 ## kubescape version
 
 Display version information.
